@@ -135,3 +135,15 @@ def billboard(name, price=30):
     return np.multiply(len(name), price)
 
     
+# Given an array of integers your solution should find the smallest integer.
+
+def find_smallest_int(arr):
+    return min(arr)
+
+
+# Given an array of integers, return a new array with each value doubled.
+
+def maps(a):
+    b = [element * 2 for element in a]
+    return b
+    
