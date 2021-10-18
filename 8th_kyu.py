@@ -146,4 +146,27 @@ def find_smallest_int(arr):
 def maps(a):
     b = [element * 2 for element in a]
     return b
+
+
+# Create a function which answers the question "Are you playing banjo?".
+# If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+def are_you_playing_banjo(name):
+    if str(name[0]) == "R" or str(name[0]) == "r":
+        return name + " plays banjo"
+    else:
+        return name + " does not play banjo"
+    
+    
+# There was a test in your class and you passed it. Congratulations!
+# But you're an ambitious person. You want to know if you're better than the average student in your class.
+# You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+def better_than_average(class_points, your_points):
+    
+    mean = sum(class_points)/len(class_points)
+    if your_points > mean:
+        return True
+    else: 
+        return False
     
